@@ -8,3 +8,9 @@
 position = Vector2(576, 324)
 scale = Vector2(14.4, 12.96)
 texture = ExtResource("1_b05lr")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 540.0
+offset_top = 287.0
+offset_right = 580.0
+offset_bottom = 327.0
