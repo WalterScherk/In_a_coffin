@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://x1yhathua5yr"]
+
+[ext_resource type="Script" path="res://Scenes/Button.gd" id="1_6uk7f"]
+[ext_resource type="Texture2D" uid="uid://b4i8b2ufu3wvj" path="res://Sprites/Sprite nothing is there  In a coffin Beta.png" id="1_7s2rv"]
+[ext_resource type="Texture2D" uid="uid://dqrk556ye0n07" path="res://Sprites/Untitled.png" id="3_k5fou"]
+
+[node name="MainMenu" type="Node2D"]
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = 395.0
+offset_top = 395.0
+offset_right = 740.0
+offset_bottom = 516.0
+texture_normal = ExtResource("3_k5fou")
+texture_pressed = ExtResource("1_7s2rv")
+script = ExtResource("1_6uk7f")
+
+[node name="Label" type="Label" parent="TextureButton"]
+layout_mode = 0
+offset_left = 145.0
+offset_top = 44.0
+offset_right = 185.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Start"
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
