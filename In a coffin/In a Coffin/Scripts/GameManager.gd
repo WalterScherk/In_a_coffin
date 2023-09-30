@@ -23,3 +23,4 @@ func _process(delta):
 
 	if hope > 0:
 		hope -= 1 * delta
+	
