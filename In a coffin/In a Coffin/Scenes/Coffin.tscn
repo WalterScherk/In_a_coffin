@@ -17,6 +17,3 @@ texture = ExtResource("1_b05lr")
 
 [node name="PoppingTextManager" type="Node2D" parent="."]
 script = ExtResource("3_htoop")
-
-[node name="Node2D" type="Node2D" parent="."]
-position = Vector2(57, 580)
