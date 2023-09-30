@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://x1yhathua5yr"]
+[gd_scene load_steps=5 format=3 uid="uid://x1yhathua5yr"]
 
 [ext_resource type="Texture2D" uid="uid://b4i8b2ufu3wvj" path="res://Sprites/Sprite nothing is there  In a coffin Beta.png" id="1_7s2rv"]
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_yjsqe"]
 [ext_resource type="Texture2D" uid="uid://dqrk556ye0n07" path="res://Sprites/Untitled.png" id="3_k5fou"]
+[ext_resource type="FontFile" uid="uid://bo4ls2pxu5tuj" path="res://Scenes/UnfinishedScreamRegular.otf" id="4_m5xo3"]
 
 [node name="MainMenu" type="Node2D"]
 script = ExtResource("1_yjsqe")
@@ -18,11 +19,13 @@ texture_pressed = ExtResource("1_7s2rv")
 
 [node name="Label" type="Label" parent="VBoxContainer/TextureButton2"]
 layout_mode = 0
-offset_left = 142.0
-offset_top = 50.0
-offset_right = 182.0
-offset_bottom = 76.0
+offset_left = 33.0
+offset_top = 26.0
+offset_right = 113.0
+offset_bottom = 97.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_m5xo3")
+theme_override_font_sizes/font_size = 70
 text = "Start"
 
 [node name="TextureButton" type="TextureButton" parent="VBoxContainer"]
@@ -30,11 +33,14 @@ layout_mode = 2
 texture_normal = ExtResource("3_k5fou")
 
 [node name="Label" type="Label" parent="VBoxContainer/TextureButton"]
-offset_left = 142.0
-offset_top = 50.0
-offset_right = 182.0
-offset_bottom = 76.0
+layout_mode = 0
+offset_left = 31.0
+offset_top = 26.0
+offset_right = 90.0
+offset_bottom = 97.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_m5xo3")
+theme_override_font_sizes/font_size = 70
 text = "exit"
 
 [connection signal="pressed" from="VBoxContainer/TextureButton2" to="." method="_on_texture_button_2_pressed"]
