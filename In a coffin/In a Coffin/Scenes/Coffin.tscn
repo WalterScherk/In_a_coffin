@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://d0m22pwgwl6lf"]
+
+[ext_resource type="Texture2D" uid="uid://b4i8b2ufu3wvj" path="res://Sprites/Sprite nothing is there  In a coffin Beta.png" id="1_b05lr"]
+
+[node name="Main" type="Node2D"]
+
+[node name="SpriteNothingIsThereInACoffinBeta" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(14.4, 12.96)
+texture = ExtResource("1_b05lr")
