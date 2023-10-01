@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://d0m22pwgwl6lf"]
+[gd_scene load_steps=7 format=3 uid="uid://d0m22pwgwl6lf"]
 
 [ext_resource type="Texture2D" uid="uid://b4i8b2ufu3wvj" path="res://Sprites/Sprite nothing is there  In a coffin Beta.png" id="1_b05lr"]
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="1_tpele"]
 [ext_resource type="Script" path="res://Scripts/PopingTextManager.gd" id="3_htoop"]
 [ext_resource type="Texture2D" uid="uid://ds28mm4ulrt24" path="res://Sprites/Daño.png" id="4_ek0er"]
 [ext_resource type="Texture2D" uid="uid://dxnujdrnvwlkk" path="res://Sprites/Mondongo.jpg" id="5_ev6fe"]
+[ext_resource type="AudioStream" uid="uid://bww8onu31wye7" path="res://Music/alone.wav" id="6_j3c6n"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_tpele")
@@ -38,5 +39,10 @@ offset_left = 558.0
 offset_top = 131.0
 offset_right = 598.0
 offset_bottom = 171.0
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(558, 131)
+stream = ExtResource("6_j3c6n")
+autoplay = true
 
 [connection signal="pressed" from="InvisibleButton" to="." method="_on_invisible_button_pressed"]
