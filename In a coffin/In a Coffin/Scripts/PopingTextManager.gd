@@ -9,11 +9,11 @@ func SpawnText(text):
 	var yPos = rng.randf_range(60, 580)
 	touchButton.position = Vector2(xPos, yPos)
 	
+	
 	label.position = touchButton.position
 	
 	label.text = text
 	add_child(touchButton)
 	add_child(label)
-
-
+	
 	

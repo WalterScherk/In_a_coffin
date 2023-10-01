@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://x1yhathua5yr"]
+[gd_scene load_steps=7 format=3 uid="uid://x1yhathua5yr"]
 
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_yjsqe"]
 [ext_resource type="Texture2D" uid="uid://bevrmmpdg5o8k" path="res://Sprites/UntitleDark.png" id="3_hs5o7"]
 [ext_resource type="Texture2D" uid="uid://dqrk556ye0n07" path="res://Sprites/Untitled.png" id="3_k5fou"]
 [ext_resource type="FontFile" uid="uid://bo4ls2pxu5tuj" path="res://Scenes/UnfinishedScreamRegular.otf" id="4_m5xo3"]
 [ext_resource type="Texture2D" uid="uid://dgcx31xp01qwa" path="res://Sprites/menu_sketch_a.png" id="5_nsn67"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0kbon"]
 
 [node name="MainMenu" type="Node2D"]
 position = Vector2(0, 201)
@@ -54,6 +56,15 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("4_m5xo3")
 theme_override_font_sizes/font_size = 70
 text = "Exit"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 25.0
+offset_top = 408.0
+offset_right = 221.0
+offset_bottom = 435.0
+text = "Made by Improv Studios"
+label_settings = SubResource("LabelSettings_0kbon")
+justification_flags = 171
 
 [connection signal="pressed" from="VBoxContainer/TextureButton2" to="." method="_on_texture_button_2_pressed"]
 [connection signal="pressed" from="VBoxContainer/TextureButton" to="." method="_on_texture_button_pressed"]

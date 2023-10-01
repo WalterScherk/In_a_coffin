@@ -1,10 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://d0m22pwgwl6lf"]
+[gd_scene load_steps=8 format=3 uid="uid://d0m22pwgwl6lf"]
 
 [ext_resource type="Texture2D" uid="uid://b4i8b2ufu3wvj" path="res://Sprites/Sprite nothing is there  In a coffin Beta.png" id="1_b05lr"]
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="1_tpele"]
 [ext_resource type="Script" path="res://Scripts/PopingTextManager.gd" id="3_htoop"]
 [ext_resource type="Texture2D" uid="uid://ds28mm4ulrt24" path="res://Sprites/Daño.png" id="4_ek0er"]
 [ext_resource type="Texture2D" uid="uid://dxnujdrnvwlkk" path="res://Sprites/Mondongo.jpg" id="5_ev6fe"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_a5p4c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sfpet"]
+size = Vector2(26.698, 5.30231)
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_tpele")
@@ -32,3 +37,16 @@ texture_filter = 1
 position = Vector2(-279, 187)
 scale = Vector2(0.712037, 0.774608)
 texture = ExtResource("5_ev6fe")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 1)
+texture = SubResource("PlaceholderTexture2D_a5p4c")
+centered = false
+script = ExtResource("3_htoop")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D"]
+scale = Vector2(0.5, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/StaticBody2D"]
+scale = Vector2(9.99, 9.99)
+shape = SubResource("RectangleShape2D_sfpet")
