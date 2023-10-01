@@ -12,4 +12,4 @@ func _process(delta):
 
 
 func _on_pressed():
-	get_tree().change_scene("res://Scenes/Coffin.tscn")	
+	get_tree().change_scene("res://Scenes/Coffin.tscn")

@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://d0m22pwgwl6lf"]
+[gd_scene load_steps=6 format=3 uid="uid://d0m22pwgwl6lf"]
 
 [ext_resource type="Texture2D" uid="uid://b4i8b2ufu3wvj" path="res://Sprites/Sprite nothing is there  In a coffin Beta.png" id="1_b05lr"]
 [ext_resource type="Script" path="res://Scripts/GameManager.gd" id="1_tpele"]
 [ext_resource type="Script" path="res://Scripts/PopingTextManager.gd" id="3_htoop"]
+[ext_resource type="Texture2D" uid="uid://ds28mm4ulrt24" path="res://Sprites/Daño.png" id="4_ek0er"]
+[ext_resource type="Texture2D" uid="uid://dxnujdrnvwlkk" path="res://Sprites/Mondongo.jpg" id="5_ev6fe"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_tpele")
@@ -11,9 +13,21 @@ script = ExtResource("1_tpele")
 process_mode = 4
 texture_filter = 1
 texture_repeat = 1
-position = Vector2(576, 324)
-scale = Vector2(14.4, 12.96)
+position = Vector2(575.5, 324)
+scale = Vector2(14.4125, 12.96)
 texture = ExtResource("1_b05lr")
 
 [node name="PoppingTextManager" type="Node2D" parent="."]
 script = ExtResource("3_htoop")
+
+[node name="Daño" type="Sprite2D" parent="."]
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(576.5, 323)
+scale = Vector2(8.86923, 7.22222)
+texture = ExtResource("4_ek0er")
+
+[node name="Mondongo" type="Sprite2D" parent="."]
+position = Vector2(-279, 187)
+scale = Vector2(0.712037, 0.774608)
+texture = ExtResource("5_ev6fe")

@@ -17,9 +17,12 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_just_pressed("ui_select"):
+	if Input.is_action_just_pressed("ui_select") && punches < 20:
 		punches += 1
-		print(punches)
+		print("Punches")
+		#transparencia -= max transparencia / 1000
+	if Input.is_action_just_pressed("ui_select") && punches >= 20:
+		print("You can't punch anymore")
 
 	if hope > 0:
 		hope -= 1 * delta
