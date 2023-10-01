@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bo4ls2pxu5tuj"
-path="res://.godot/imported/UnfinishedScreamRegular.otf-92337818ba7d83b802bb82b6a5378b71.fontdata"
+path="res://.godot/imported/UnfinishedScreamRegular.otf-89806f8ed2da2373ced2a166a3ec4a24.fontdata"
 
 [deps]
 
-source_file="res://Scenes/UnfinishedScreamRegular.otf"
-dest_files=["res://.godot/imported/UnfinishedScreamRegular.otf-92337818ba7d83b802bb82b6a5378b71.fontdata"]
+source_file="res://Fonts/UnfinishedScreamRegular.otf"
+dest_files=["res://.godot/imported/UnfinishedScreamRegular.otf-89806f8ed2da2373ced2a166a3ec4a24.fontdata"]
 
 [params]
 
