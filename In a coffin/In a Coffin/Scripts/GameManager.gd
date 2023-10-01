@@ -13,7 +13,7 @@ func _ready():
 	hope = 100
 	punches = 0
 	isInjured = false
-	spawnedThing = $PoppingTextManager.SpawnText("Hola k ase")
+	spawnedThing = $PoppingTextManager.SpawnText("LA GRAN GUERRA EMO")
 	$Daño.self_modulate.a = 0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

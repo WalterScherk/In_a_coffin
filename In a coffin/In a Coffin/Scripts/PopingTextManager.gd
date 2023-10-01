@@ -16,4 +16,3 @@ func SpawnText(text):
 	add_child(touchButton)
 	add_child(label)
 	
-	
