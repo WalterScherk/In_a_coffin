@@ -23,11 +23,12 @@ script = ExtResource("3_htoop")
 [node name="Daño" type="Sprite2D" parent="."]
 texture_filter = 1
 texture_repeat = 1
-position = Vector2(576.5, 323)
-scale = Vector2(8.86923, 7.22222)
+position = Vector2(576, 323.5)
+scale = Vector2(8.87692, 7.23333)
 texture = ExtResource("4_ek0er")
 
 [node name="Mondongo" type="Sprite2D" parent="."]
+texture_filter = 1
 position = Vector2(-279, 187)
 scale = Vector2(0.712037, 0.774608)
 texture = ExtResource("5_ev6fe")
