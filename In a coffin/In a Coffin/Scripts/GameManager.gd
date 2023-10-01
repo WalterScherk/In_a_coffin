@@ -29,8 +29,3 @@ func _process(delta):
 
 	if hope > 0:
 		hope -= 1 * delta
-
-
-
-func _on_invisible_button_pressed():
-	print("clic on text")
