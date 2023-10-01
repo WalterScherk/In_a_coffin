@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://x1yhathua5yr"]
 
-[ext_resource type="Texture2D" uid="uid://b4i8b2ufu3wvj" path="res://Sprites/Sprite nothing is there  In a coffin Beta.png" id="1_7s2rv"]
 [ext_resource type="Script" path="res://Scripts/MainMenu.gd" id="1_yjsqe"]
+[ext_resource type="Texture2D" uid="uid://bevrmmpdg5o8k" path="res://Sprites/UntitleDark.png" id="3_hs5o7"]
 [ext_resource type="Texture2D" uid="uid://dqrk556ye0n07" path="res://Sprites/Untitled.png" id="3_k5fou"]
 [ext_resource type="FontFile" uid="uid://bo4ls2pxu5tuj" path="res://Scenes/UnfinishedScreamRegular.otf" id="4_m5xo3"]
 
@@ -16,7 +16,7 @@ offset_bottom = 40.0
 [node name="TextureButton2" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("3_k5fou")
-texture_pressed = ExtResource("1_7s2rv")
+texture_pressed = ExtResource("3_hs5o7")
 
 [node name="Label" type="Label" parent="VBoxContainer/TextureButton2"]
 layout_mode = 0
@@ -32,6 +32,7 @@ text = "Start"
 [node name="TextureButton" type="TextureButton" parent="VBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("3_k5fou")
+texture_pressed = ExtResource("3_hs5o7")
 
 [node name="Label" type="Label" parent="VBoxContainer/TextureButton"]
 layout_mode = 0

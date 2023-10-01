@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0m22pwgwl6lf"]
+
+[ext_resource type="Texture2D" uid="uid://b4i8b2ufu3wvj" path="res://Sprites/Sprite nothing is there  In a coffin Beta.png" id="1_b05lr"]
+[ext_resource type="Script" path="res://Scripts/GameManager.gd" id="1_tpele"]
+[ext_resource type="Script" path="res://Scripts/PopingTextManager.gd" id="3_htoop"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_tpele")
+
+[node name="SpriteNothingIsThereInACoffinBeta" type="Sprite2D" parent="."]
+process_mode = 4
+texture_filter = 1
+texture_repeat = 1
+position = Vector2(576, 324)
+scale = Vector2(14.4, 12.96)
+texture = ExtResource("1_b05lr")
+
+[node name="PoppingTextManager" type="Node2D" parent="."]
+script = ExtResource("3_htoop")
