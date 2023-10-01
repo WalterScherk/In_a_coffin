@@ -14,12 +14,15 @@ func _ready():
 	punches = 0
 	isInjured = false
 	spawnedThing = $PoppingTextManager.SpawnText("Hola")
+	$Daño.self_modulate.a = 0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if Input.is_action_just_pressed("ui_select") && punches < 20:
 		punches += 1
 		print("Punches")
+		if(punches % 5 == 0):
+			$Daño.self_modulate.a += 0.1
 		#transparencia -= max transparencia / 1000
 	if Input.is_action_just_pressed("ui_select") && punches >= 20:
 		print("You can't punch anymore")
